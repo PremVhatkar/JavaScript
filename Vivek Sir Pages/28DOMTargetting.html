@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center">
+    <h1>DOM Targetting</h1><br>
+
+    <h1 id="output">***</h1>
+    <h1 id="output">***</h1>
+    <h1 class="output">***</h1>
+    <h1 class="output">***</h1>
+    <h1 class="output">***</h1>
+    <h1 class="output">***</h1>
+
+    <button onclick="submit()">Submit</button>
+
+    <script>
+
+        function submit() {
+            // document.getElementById("output").innerHTML = "JavaScript"
+            // document.getElementById("output").style.color = "red"
+
+            // let target = document.getElementById("output")
+            // target.innerHTML = "JavaScript"
+            // target.style.color = "red"
+
+            // *********** getElementsByClassName
+            // let classTarget = document.getElementsByClassName("output")
+
+            // console.log(classTarget);
+            // classTarget[0].style.color = "red";
+            // classTarget[1].style.color = "red";
+            // classTarget[2].style.color = "red";
+            // classTarget[3].style.color = "red";
+
+            // for (let i = 0; i <= classTarget.length; i++) {
+            //     classTarget[i].style.color = "red";
+            // }
+
+
+            // *************** getElementsByTagName
+            // let tagTarget = document.getElementsByTagName("h1");
+            // console.log(tagTarget);
+
+            // // tagTarget[0].style.color = "red";
+            // // tagTarget[1].style.color = "red";
+            // // tagTarget[2].style.color = "red";
+
+            // for (let i = 0; i < tagTarget.length; i++) {
+            //     tagTarget[i].style.color = "red";
+            // }
+
+            // ************ querySelector
+            // let queryTarget = document.querySelector("h1")
+            let queryTarget = document.querySelectorAll("h1#output")
+            queryTarget[0].style.color = "green";
+            queryTarget[1].style.color = "green";
+
+            let queryTargetAll = document.querySelectorAll("h1.output")
+            console.log(queryTarget);
+
+            queryTargetAll[0].style.color = "red";
+            queryTargetAll[1].style.color = "red";
+            queryTargetAll[2].style.color = "red";
+            queryTargetAll[3].style.color = "red";
+
+
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

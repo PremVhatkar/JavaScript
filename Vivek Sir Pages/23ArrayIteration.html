@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array Iteration</h1>
+    <!-- 1) forEach
+    2) map
+    3) filter
+    4) reducer -->
+
+
+    <script>
+
+        // Syntax
+
+        // array.forEach(function(currentValue, index, arr), thisValue);
+
+        //    ***** forEach Method ******
+        // let students = ["Asif", "Vinit", "Rutik", "Prem", "Krushna"];
+
+        // students.forEach((arr, item) => {
+        //     console.log(item, arr);
+        // });
+
+
+
+        //    ***** map Method *******
+        // let values = [5, 10, 50, 70, 800, 1000];
+
+        // let data = values.map((value) => {
+        //     // console.log(value);
+        //     return value + 100;
+        // });
+
+        // console.log(data);
+
+
+        // ***** filter Method *******
+
+        // let ages = [5, 10, 50, 25, 35, 91];
+
+        // let filteredAge = ages.filter((item) => {
+        //     // console.log(item);
+        //     return item >= 18
+        // });
+
+        // console.log(filteredAge);
+
+
+
+        // ***** reducer Method *******
+
+        // Syntax
+        // array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+        let ages = [5, 10, 50];
+
+        let reduceValue = ages.reduce((total, item) => {
+            return total + item
+        });
+
+        console.log(reduceValue);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

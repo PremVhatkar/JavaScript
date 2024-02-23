@@ -1,0 +1,57 @@
+.main {
+    margin: auto;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    /* padding: 10px; */
+}
+
+#btn1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    top: 0px;
+    left: 0px;
+}
+
+#btn2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    top: 0px;
+    right: 0px;
+}
+
+#btn3{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    bottom: 0px;
+    left: 0px;
+}
+
+#btn4{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+
+.firstline{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.secondline{
+    display: flex;
+    justify-content: space-between;
+}

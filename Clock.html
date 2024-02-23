@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock Task</title>
+    <style>
+        h1 {
+            text-align: center;
+            padding: 100px;
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Digital Clock
+        <br><br><span id="clock"></span>
+    </h1>
+
+    <script>
+        var span = document.getElementById('clock');
+
+        function time() {
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            span.textContent = ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+        }
+
+        setInterval(time, 100);
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

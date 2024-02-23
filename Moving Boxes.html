@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="Assets/CSS/Movingboxes.css">
+
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="firstline">
+
+            <button id="btn1"></button>
+            <button id="btn2"></button>
+
+        </div>
+
+        <div class="secondline">
+
+            <button id="btn3"></button>
+            <button id="btn4"></button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        function move1() {
+
+            var count = 0
+            let myInterval = setInterval(() => {
+                count += 50;
+
+                if (count === 500) {
+                    document.getElementById("btn1").style.backgroundColor = "purple";
+
+                    clearInterval(myInterval)
+                }
+
+                document.getElementById("btn1").style.marginLeft = count + "px";
+                document.getElementById("btn1").style.marginTop = count + "px";
+            }, 500);
+        }
+
+        function move2() {
+
+            var count = 0
+            let myInterval = setInterval(() => {
+                count += 50;
+
+                if (count === 500) {
+                    document.getElementById("btn2").style.backgroundColor = "green";
+
+                    clearInterval(myInterval)
+                }
+
+                document.getElementById("btn2").style.marginRight = count + "px";
+                document.getElementById("btn2").style.marginTop = count + "px";
+            }, 500);
+        }
+
+        function move3() {
+
+            var count = 0
+            let myInterval = setInterval(() => {
+                count += 50;
+
+                if (count === 500) {
+                    document.getElementById("btn3").style.backgroundColor = "tan";
+                    clearInterval(myInterval)
+                }
+
+                document.getElementById("btn3").style.marginLeft = count + "px";
+                document.getElementById("btn3").style.marginBottom = count + "px";
+            }, 500);
+
+        }
+
+        function move4() {
+
+            var count = 0
+            let myInterval = setInterval(() => {
+                count += 50;
+
+                if (count === 500) {
+                    document.getElementById("btn4").style.backgroundColor = "violet";
+
+                    clearInterval(myInterval)
+                }
+
+                document.getElementById("btn4").style.marginRight = count + "px";
+                document.getElementById("btn4").style.marginBottom = count + "px";
+            }, 500);
+
+        }
+
+        move1();
+        move2();
+        move3();
+        move4();
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center">
+    <h1>Function</h1>
+    <h3>1. Declaraton Function</h3>
+    <h3>2. Expression Function</h3>
+    <h3>3. Arrow Function</h3>
+
+    <script>
+
+        // Declaraton Function / Pure Function / Regular Function
+
+        function declare() {
+            console.log("Declaration Function");
+        };
+        declare();
+
+        // Expression Function / Annonymous Function
+
+        const express = function () {
+            console.log("Expression Function");
+        };
+        express();
+
+        // Arrow Function / Fat Arrow Function / Lambda Function / Annonymous Function
+
+        // const arrow = ()=>{
+        //     console.log("Arrow Function");
+        // };
+        const arrow = () => console.log("Arrow Function");
+
+        arrow();
+
+
+
+
+        // ****************** Function Arguments ***********
+
+        let num1 = Number(prompt("Enter Your num1"));
+        let num2 = parseInt(prompt("Enter Your num2"));
+
+        function demo(x, y) {
+            // console.log(x + " " + y);
+            return x + y;
+        };
+
+        let total = demo(num1, num2);
+
+        console.log(total);
+
+
+    </script>
+</body>
+
+</html>

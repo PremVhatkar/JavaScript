@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="out"></h1>
+    <script>
+        let num1 = 50;
+        let num2 = parseInt(prompt("Enter Number :"));
+        
+        if(num1 < num2)
+        {
+           document.getElementById("out").innerHTML = "Number is heigher";
+        }
+        else if(num1 > num2)
+        {
+           document.getElementById("out").innerHTML = "Number is Lower";
+            
+        }
+        else
+        {
+           document.getElementById("out").innerHTML = "Number is Equal";
+            
+        }
+    </script>
+</body>
+</html>

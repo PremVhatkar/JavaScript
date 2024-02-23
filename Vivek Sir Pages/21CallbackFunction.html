@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Callback Function</h1>
+    <p>A callback is a function passed as an argument to another function</p>
+
+    <script>
+
+        let abc = "vky";
+
+        function child(a) {
+            console.log("Child Function !!!");
+            console.log("Hello " + a);
+        };
+
+        function demo(child) {
+
+            console.log(child);
+            child("vky");
+            console.log("Demo Function !!!");
+        };
+
+        demo(child);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

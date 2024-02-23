@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="text-align: center">
+
+    <label for="name">Name <span style="color: red;">*</span><span id="nameError" class="error">Name is
+            required</span></label><br>
+    <input type="text" id="name"><br>
+
+    <br>
+
+    <label for="surname">Surname <span style="color: red;">*</span><span id="surnameError" class="error">Surname is required</span></label><br>
+    <input type="text" id="surname"><br><br>
+
+    <label for="city">City <span style="color: red;">*</span><span id="cityError" class="error">City is required</span></label><br>
+    <input type="text" id="city"><br><br>
+
+    <label for="number">Number <span style="color: red;">*</span><span id="numberError" class="error">number is required</span></label><br>
+    <input type="text" id="number"><br><br>
+
+    <button onclick="submit()">Submit</button>
+
+    <script>
+
+        function submit() {
+            var name = document.getElementById('name').value;
+            var surname = document.getElementById('surname').value;
+            var city = document.getElementById('city').value;
+            var number = document.getElementById('number').value;
+
+            document.getElementById('nameError').style.display = 'none';
+            document.getElementById('surnameError').style.display = 'none';
+            document.getElementById('cityError').style.display = 'none';
+            document.getElementById('numberError').style.display = 'none';
+
+            if (name === '') {
+                document.getElementById('nameError').style.display = 'block';
+            }
+
+            if (surname === '') {
+                document.getElementById('surnameError').style.display = 'block';
+            }
+
+            if (city === '') {
+                document.getElementById('cityError').style.display = 'block';
+            }
+
+            if (number === '') {
+                document.getElementById('numberError').style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

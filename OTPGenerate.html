@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="prem.js"></script> -->
+
+</head>
+
+<body>
+
+    <script>
+
+        function otp() {
+            let otp = ""
+            for (let i = 0; i < 4; i++) {
+                otp += Math.floor(Math.random() * 10);
+            }
+            return "Your OTP is: " + otp;
+        }
+        console.log(otp());
+
+
+        otp();
+    </script>
+
+</body>
+
+</html>

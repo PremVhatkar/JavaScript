@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Function inside Function</h1>
+
+
+
+    <script>
+
+
+        function demo() {
+
+            function childA() {
+                console.log("Child A");
+            };
+
+            const childB = function (a, b) {
+                console.log(a + b);
+            }
+
+            const childC = (x, y) => {
+                return x + y;
+            }
+
+            console.log("Main Function");
+            childA();
+            childB(5, 5);
+            console.log(childC(10, 10));;
+        };
+
+        demo();
+
+
+
+
+
+    </script>
+</body>
+
+</html>
