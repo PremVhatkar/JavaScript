@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Closure</h1>
+
+
+    <script>
+
+        function demo(x) {
+            var y = 100
+            // return 100
+            function addition() {
+                // console.log("Demo 2 Function");
+                return x + y
+            };
+
+            function subtraction() {
+                // console.log("Demo 2 Function");
+                return x - y
+            };
+
+            return {
+                addition: addition,
+                subtraction: subtraction
+            };
+
+
+        };
+
+        let add = demo(500).addition;
+        let sub = demo(500).subtraction;
+        console.log(add());
+        console.log(sub());
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

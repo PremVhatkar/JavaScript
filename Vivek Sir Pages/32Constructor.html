@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center">
+    <h1>JavaScript Object Constructors</h1>
+    <h1>Constructors Function</h1>
+
+
+    <script>
+
+        // let name = "Asif";
+        // let surname = "Inamdar";
+        // let qualification = "MCA";
+
+        // let student1 = {
+        //     name: "Asif",
+        //     surname: "Inamdar",
+        //     qualification: "MCA",
+        //     course: "MERN Stack",
+        //     Salary: 3.5
+        // };
+
+        // let student2 = {
+        //     name: "Rutik",
+        //     surname: "Patil",
+        //     qualification: "MCA",
+        //     course: "MERN Stack",
+        //     Salary: 3.6
+        // };
+
+        // let student3 = {
+        //     name: "Vinit",
+        //     surname: "Kamble",
+        //     qualification: "MCA",
+        //     course: "MERN Stack",
+        //     Salary: 4
+        // };
+
+        // ---------------------------------------
+
+        function Students(name, surname, qualification, course, salary) {
+
+            this.firstName = name;
+            this.lastName = surname;
+            this.qualification = qualification;
+            this.course = course;
+            this.salary = salary;
+        };
+
+        let student1 = new Students("asif", "Inamdar", "MCA", "MERN STACK", 4);
+        let student2 = new Students("Rutik", "Patil", "MCA", "MERN STACK", 5);
+
+        console.log(student1);
+        console.log(student2.firstName);
+
+        student2.gender = "Male";
+        console.log(student2);
+        console.log(student1);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
